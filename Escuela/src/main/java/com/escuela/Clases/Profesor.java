@@ -5,10 +5,13 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 @Data
+@Entity
 public class Profesor extends Persona{
     private  int añoDeEgresoDeFacultad;
     private int añoIngresoAInsitucionEducativa;
-    private List<Materia> materias = new ArrayList<Materia>();
+
+    @OneToMany
+    private List<Materia> dictadas = new ArrayList<Materia>();
 
     public int CuantasMaterias(){
         return materias.size();
