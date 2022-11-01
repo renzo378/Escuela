@@ -3,6 +3,7 @@ package com.escuela.Clases;
 import lombok.Data;
 
 @Data
+@Entity
 public class Materia {
     private String Nombre;
     private int Duracion;
