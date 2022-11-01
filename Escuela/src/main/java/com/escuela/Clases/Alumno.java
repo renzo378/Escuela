@@ -4,14 +4,18 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 @Data
+@Entity
 public class Alumno extends  com.escuela.funciones.Persona {
     private int legajo;
 
 
+    @OneToMany
     private List<Materia> materias = new ArrayList<Materia>();
-
+    @OneToMany
     private List<Profesor> profesores = new ArrayList<Profesor>();
+    @ManyToOne
     private Director director;
+    @OneToOne
     private Profesor padrino;
     public String ProfesorDeLaMateria(String materia,List<Profesor> profesores){
         String retorno = "";
