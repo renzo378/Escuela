@@ -6,9 +6,7 @@ import lombok.Data;
 @Entity
 public class Materia {
     private String Nombre;
-    private int Duracion;
-    private String complejidad;
-    private int Correlativas;
+  
 
     public boolean Esdificil( ){
         if(complejidad == "alta"){
