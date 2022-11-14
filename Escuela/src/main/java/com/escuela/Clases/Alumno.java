@@ -8,7 +8,8 @@ import java.util.List;
 public class Alumno extends  com.escuela.funciones.Persona {
     private int legajo;
 
-
+@OneToOne
+  private Auxiliar auxiliar;
     @OneToMany
     private List<Materia> materias = new ArrayList<Materia>();
     @OneToMany
