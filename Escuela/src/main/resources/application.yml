@@ -1,10 +1,10 @@
 spring:
   application:
-    name: microservicios-facturas
+    name: escuela
   datasource:
-    url: jdbc:mySql://localhost:3306/db_facturas?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
-    password: 
+    url: jdbc:mySql://${DB_HOST}:3306/${DB}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: ${USER}
+    password: ${PASS}
   jpa:
     show-sql: true
     hibernate:
@@ -17,4 +17,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${EUREKA_HOST}:8761/eureka/
