@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mySql://localhost:3306/db_facturas?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password: 
+    password: pass123
   jpa:
     show-sql: true
     hibernate:
