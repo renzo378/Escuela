@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservicios-facturas
+    name: escuela
   datasource:
     url: jdbc:mySql://localhost:3306/db_facturas?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
